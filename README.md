@@ -23,15 +23,7 @@
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
 
-The re-former project sets up an initial rails app containing a initial database that takes user data, destroy it and edit it.
-
-## Screenshot Test
-#
-<p align="center">
-  <img height="auto" src="Screenshot.png">
-</p>
-
-#
+The re-former project sets up an initial rails app containing an initial database that takes user data, destroy it and edit it.
 
 ### Built With
 
@@ -42,7 +34,7 @@ The re-former project sets up an initial rails app containing a initial database
 
 Contributions make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Prequisites
+## Prerequisites
 
 Ruby & Rails installed on your local machine.
 bundle installed on your machine
@@ -63,7 +55,8 @@ Terminal or similar to execute the program.
 1. run the command ```bundle install```   This will install the required dependencies
 2. run the command ```rails db:create```. This will initialize the necessary migration files
 3. run the command ```rails db:migrate``` 
-4. run the command ```rails console```
+4. run the command ```rails server```
+5. Open and paste this link in a new tab on browser ```http://localhost:3000/``` to see the project.
 
 
 ## Authors
