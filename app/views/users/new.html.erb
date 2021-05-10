@@ -30,3 +30,24 @@
   -->
 
 
+  <div class="container-fluid justify-content-center my-5 text-center">
+    <% if @user.errors.any? %>
+    <div>
+      <% @user.errors.full_messages.each do |msg| %>
+          <h6><%= msg %></h6>
+      <% end %>
+      </div>
+    <% end %>
+    <div class="form-group my-3">
+      <%= form_with model: @user  do |f|%>
+        <%= f.text_field :username, autofocus: true, placeholder: 'First Name'%> <br/>
+        <br/>
+        <%= f.email_field :email, autofocus: true, placeholder: 'Email'%> <br/>
+        <br/>
+        <%= f.password_field :password,autofocus: true,placeholder: 'Password'%><br/>
+        <br/>
+        <div><%= f.submit "Save",class:"btn btn-primary mb-2"%></div>
+      <% end %>
+    </div>
+  </div>
+  
